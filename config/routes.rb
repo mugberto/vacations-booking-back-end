@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
 
 
-  # GET /reservations.json (gets all reservations as json)
+  # GET /reservations (gets all reservations)
   # POST /reservations (the id's are hardcoded but the postman post method works if you send dates as json data
   #{ "startingDay": "smth", "endingDay": "smth" }
   # DELETE /reservation/:id
