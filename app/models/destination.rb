@@ -6,5 +6,5 @@ class Destination < ApplicationRecord
   validates :location, presence: true, length: { maximum: 100 }
   validates :image_url, presence: true
   validates :price_per_day, presence: true, numericality: true
-  validates_association :reservations
+  validates_associated :reservations
 end
