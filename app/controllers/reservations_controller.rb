@@ -10,8 +10,8 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
-     @reservation.destination_id = 1  #params[:destination_id]
-    @reservation.user = User.first #current_user
+    @reservation.destination_id = 1 # params[:destination_id]
+    @reservation.user = User.first # current_user
 
     if @reservation.save
       redirect_to :root, notice: 'Reservation was successfully created.'
@@ -23,10 +23,11 @@ class ReservationsController < ApplicationController
   def destroy
     @reservation = Reservation.find(params[:id])
     @reservation.destroy
-    redirect_to :root, :notice => "Your reservation has been deleted"
+    redirect_to :root, notice: 'Your reservation has been deleted'
   end
 
   private
+
   def reservation_params
     params.require(:reservation).permit(:startingDay, :endingDay)
   end
