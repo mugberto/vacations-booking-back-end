@@ -2,14 +2,15 @@ require 'rails_helper'
 
 RSpec.describe Reservation, type: :model do
   before do
-    @user = User.create(email: "a@b.c", username: "user1", password: '123456', password_confirmation: '123456')
+    @user = User.create(email: 'a@b.c', username: 'user1', password: '123456', password_confirmation: '123456')
     @destination = Destination.create(name: 'London', location: 'London', price_per_day: 25,
-    image_url: 'https://via.placeholder.com/150')
-   
+                                      image_url: 'https://via.placeholder.com/150')
   end
 
-  subject { Reservation.create(user_id: @user.id, destination_id: @destination.id, startingDay: '01/01/2015',
-  endingDay: '01/01/2015')}
+  subject do
+    Reservation.create(user_id: @user.id, destination_id: @destination.id, startingDay: '01/01/2015',
+                       endingDay: '01/01/2015')
+  end
 
   it 'create a valid destination object' do
     expect(subject).to be_valid
@@ -27,5 +28,3 @@ RSpec.describe Reservation, type: :model do
     it { should belong_to(:user) }
   end
 end
-
-
