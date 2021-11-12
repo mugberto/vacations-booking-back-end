@@ -1,5 +1,14 @@
 ### Vacations-booking-front-end
 
+# Setup React App
+ link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/1)]
+
+**In this milestone I did the following 👇 **
+
+- Created a react app
+- Added dependencies
+- Added linters
+
 # Add App Component
  link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/2)]
 
