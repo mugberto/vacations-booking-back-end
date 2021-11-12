@@ -1,11 +1,11 @@
 class ReservationsController < ApplicationController
   def index
     @reservations = Reservation.all
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml { render xml: @reservations }
-      format.json { render json: @reservations }
-    end
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.xml { render xml: @reservations }
+    #   format.json { render json: @reservations }
+    # end
   end
 
   def create
