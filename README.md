@@ -1,5 +1,7 @@
 # README
 
+Link to vacations-booking-front-end [link](https://github.com/danmainah/vacations-booking-front-end)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
