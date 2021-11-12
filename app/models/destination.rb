@@ -1,5 +1,5 @@
 class Destination < ApplicationRecord
-  has_many :reservations
+  has_many :reservations, dependent: :delete_all
   has_many :users, through: :reservations
 
   validates :name, presence: true, length: { maximum: 100 }
