@@ -3,9 +3,9 @@ class Api::V1::DestinationsController < ApplicationController
     @destinations = Destination.all
   end
 
-  # def show
-  #   @destination = Destination.find(params[:id])
-  # end
+  def show
+    @destination = Destination.find(params[:id])
+  end
 
   # def create
   #   Destination.create!(dest_params)
