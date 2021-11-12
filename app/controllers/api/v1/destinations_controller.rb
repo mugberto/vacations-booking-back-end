@@ -14,10 +14,12 @@ class Api::V1::DestinationsController < ApplicationController
     render json: { status: 'Error!', message: e.record.errors }
   end
 
-  # def destroy
-  #   @destination = Destination.find(params[:id])
-  #   @destination.destroy
-  # end
+  def destroy
+    Destination.find(params[:id]).destroy!
+    render json: { status: 'Success!', message: 'Destination deleted successively' }
+  rescue ActiveRecord::RecordNotDestroyed => e
+    render json: { status: 'Error!', message: e.record.errors }
+  end
 
   def dest_params
     params.permit(:name, :location, :image_url, :price_per_day)
