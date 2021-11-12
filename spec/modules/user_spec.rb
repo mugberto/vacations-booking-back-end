@@ -1,13 +1,13 @@
-RSpec.describe User, type: :model do 
+RSpec.describe User, type: :model do
   describe 'associations' do
     it { should have_many(:reservations) }
-    it { should have_many(:destinaions) }
+    it { should have_many(:destinations) }
   end
 
   describe 'validations' do
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:email) }
     it { should validate_presence_of(:password) }
-    it { should validate_presence_of(:password_confirmation)}
+    it { should validate_presence_of(:password_confirmation) }
   end
 end
