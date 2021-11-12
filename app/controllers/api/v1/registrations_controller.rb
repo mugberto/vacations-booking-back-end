@@ -15,5 +15,4 @@ class Api::V1::RegistrationsController < ApiController
   def user_params
     params.permit(:name, :email, :password, :password_confirmation)
   end
-
 end
