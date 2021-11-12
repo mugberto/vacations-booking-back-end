@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Vvacations-Bbooking-Front-End
 
-Things you may want to cover:
+#Add App Component
 
-* Ruby version
+**In this milestone I did the following 👇 **
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Added new folder components and moved App.js into it.
+- Updated the App.js ,removing unnecessary code add router for future use and added demo text to display
