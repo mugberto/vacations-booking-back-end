@@ -1,15 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Destination, type: :model do
-  subject do
-    Destination.create(name: 'London', location: 'London', price_per_day: 25,
-                       image_url: 'https://via.placeholder.com/150')
-  end
-
-  it 'create a valid destination object' do
-    expect(subject).to be_valid
-  end
-
   describe 'validations' do
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:location) }
