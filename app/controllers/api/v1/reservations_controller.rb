@@ -1,25 +1,19 @@
 class Api::V1::ReservationsController < ApiController
   def index
-    @reservations = current_user.reservations
-    # respond_to do |format|authenticate_user!
-    #   format.html # index.html.erb
-    #   format.xml { render xml: @reservations }
-    #   format.json { render json: @reservations }
-    # end
-    if user_signed_in?
-      render json: { reservations: @reservations, user_signed_in: user_signed_in?, current_user: current_user}
+    @reservations = current_api_v1_user.reservations
+    if api_v1_user_signed_in?
+      render json: { reservations: @reservations }
     else 
-      renser json: {errors: 'You are not logged in'}
+      renser json: {errors: ['You are not logged in!', @reservations.errors]}
     end
   end
 
   def create
-    @reservation = current_user.reservations.build(reservation_params)
-
+    @reservation = current_api_v1_user.reservations.build(reservation_params)
     if @reservation.save
-      render json: { reservation: @reservation, message: 'Reservation created!' }
+      render json: { message: 'Reservation successfully created!' }
     else
-      render json: { errors: @reservation.errors }
+      render json: { errors: ["Creating reservation failed", @reservation.errors] }
     end
   end
 
