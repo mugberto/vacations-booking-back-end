@@ -263,7 +263,7 @@ Devise.setup do |config|
   # should add them to the navigational formats lists.
   #
   # The "*/*" below is required to match Internet Explorer requests.
-  # config.navigational_formats = ['*/*', :html]
+  config.navigational_formats = []
 
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :delete
@@ -280,7 +280,7 @@ Devise.setup do |config|
   config.warden do |manager|
   #   manager.intercept_401 = false
     manager.strategies.add :jwt, Devise::Strategies::JWT
-    manager.default_strategies(scope: :user).unshift :jwt
+    manager.default_strategies(scope: :api_v1_user).unshift :jwt
   end
 
   # ==> Mountable engine configurations
@@ -321,7 +321,7 @@ module Devise
       def authenticate! 
         token = request.headers.fetch("Authorization", "").split(" ").last
         payload = JsonWebToken.decode(token)
-        success! User.find(payload["sub"])
+        success! User.find(payload["sub"]) 
       rescue ::JWT::ExpiredSignature
         fail! "Auth token has expired"
       rescue ::JWT::DecodeError
