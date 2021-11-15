@@ -19,6 +19,9 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
 
 # Add App Component
  link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/2)]
+ 
+# Added App tests
+ [Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/4)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
