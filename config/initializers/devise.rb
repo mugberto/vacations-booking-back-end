@@ -281,7 +281,7 @@ Devise.setup do |config|
   #   manager.intercept_401 = false
     manager.strategies.add :jwt, Devise::Strategies::JWT
     manager.default_strategies(scope: :user).unshift :jwt
-  # end
+  end
 
   # ==> Mountable engine configurations
   # When using Devise inside an engine, let's call it `MyEngine`, and this engine
