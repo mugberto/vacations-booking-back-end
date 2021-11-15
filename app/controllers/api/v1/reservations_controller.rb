@@ -3,8 +3,8 @@ class Api::V1::ReservationsController < ApiController
     @reservations = current_api_v1_user.reservations
     if api_v1_user_signed_in?
       render json: { reservations: @reservations }
-    else 
-      renser json: {errors: ['You are not logged in!', @reservations.errors]}
+    else
+      renser json: { errors: ['You are not logged in!', @reservations.errors] }
     end
   end
 
@@ -13,14 +13,14 @@ class Api::V1::ReservationsController < ApiController
     if @reservation.save
       render json: { message: 'Reservation successfully created!' }
     else
-      render json: { errors: ["Creating reservation failed", @reservation.errors] }
+      render json: { errors: ['Creating reservation failed', @reservation.errors] }
     end
   end
 
   def destroy
     @reservation = Reservation.find(params[:id])
     @reservation.destroy
-    render json: { message: 'Reservation succesfully removed', reservations: @reservations}
+    render json: { message: 'Reservation succesfully removed', reservations: @reservations }
   end
 
   private

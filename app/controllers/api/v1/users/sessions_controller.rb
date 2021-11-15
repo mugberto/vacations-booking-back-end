@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Api::V1::Users::SessionsController < ApiController
   skip_before_action :authenticate_api_v1_user!, only: [:create]
 
@@ -7,22 +5,22 @@ class Api::V1::Users::SessionsController < ApiController
 
   def create
     @user = User.find_by(email: params[:email])
-    if @user and @user.valid_password? params[:password]
+    if @user&.valid_password? params[:password]
       sign_in(@user)
-      render json: { message: "User loged in successfully!", token: JsonWebToken.encode(sub: @user.id), current_user_signed?: api_v1_user_signed_in?, current_user: current_api_v1_user.id
-      }
+      render json: { message: 'User loged in successfully!', token: JsonWebToken.encode(sub: @user.id),
+                     current_user_signed?: api_v1_user_signed_in?, current_user: current_api_v1_user.id }
     else
       render json: { errors: ['Invalid email or password'] }
     end
   end
 
   # DELETE /resource/sign_out
-  def destroy    
-    if api_v1_user_signed_in?      
-    Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name)
-    render json: { message: "You are successfully loged out!"}
+  def destroy
+    if api_v1_user_signed_in?
+      Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name)
+      render json: { message: 'You are successfully loged out!' }
     else
-      render json: {message: "You are not logged in!" }
+      render json: { message: 'You are not logged in!' }
     end
   end
 
