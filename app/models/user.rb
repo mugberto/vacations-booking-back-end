@@ -6,4 +6,7 @@ class User < ApplicationRecord
 
   has_many :reservations, dependent: :delete_all
   has_many :destinations, through: :reservations
+
+  validates :username, presence: true
+  validates :email, presence: true, uniqueness: true
 end
