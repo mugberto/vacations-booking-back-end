@@ -1,9 +1,26 @@
-### Vacations-booking-front-end
+# README
 
-# Add App Component
- link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/2)]
+Link to vacations-booking-front-end [link](https://github.com/danmainah/vacations-booking-front-end)
 
-**In this milestone I did the following 👇 **
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-- Added new folder components and moved App.js into it.
-- Updated the App.js ,removing unnecessary code add router for future use and added demo text to display
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
