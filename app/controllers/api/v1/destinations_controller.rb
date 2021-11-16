@@ -1,6 +1,6 @@
 class Api::V1::DestinationsController < ApiController
   skip_before_action :authenticate_api_v1_user!, only: [:index]
-  before_action :authenticate_admin!, only: [:create, :delete]
+  before_action :authenticate_admin!, only: %i[create delete]
 
   def index
     @destinations = Destination.all
@@ -31,6 +31,11 @@ class Api::V1::DestinationsController < ApiController
   end
 
   def authenticate_admin!
-    render json: { status: 'Error!', message: "You don't have authorization to create new destination!"} unless current_api_v1_user.admin
+    if current_api_v1_user.admin
+      nil
+    else
+      render json: { status: 'Error!',
+                     message: "You don't have authorization to create new destination!" }
+    end
   end
 end

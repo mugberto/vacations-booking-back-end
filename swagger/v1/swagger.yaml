@@ -224,6 +224,128 @@ paths:
           description: Destination not found
         '406':
           description: unsupported accept header
+  "/api/v1/reservations":
+    post:
+      summary: Creates a new reservation
+      tags:
+      - Add reservation
+      security:
+      - bearerAuth: []
+      parameters: []
+      responses:
+        '201':
+          description: Reservation created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: string
+                required:
+                - status
+                - message
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                destination_id:
+                  type: integer
+                user_id:
+                  type: integer
+                startingDay:
+                  type: string
+                endingDay:
+                  type: string
+              required:
+              - destination_id
+              - user_id
+              - startingDay
+              - endingDay
+          application/xml:
+            schema:
+              type: object
+              properties:
+                destination_id:
+                  type: integer
+                user_id:
+                  type: integer
+                startingDay:
+                  type: string
+                endingDay:
+                  type: string
+              required:
+              - destination_id
+              - user_id
+              - startingDay
+              - endingDay
+    get:
+      summary: Retrieves a reservations
+      tags:
+      - Get reservations
+      security:
+      - bearerAuth: []
+      responses:
+        '200':
+          description: Get reservations
+          content:
+            application/json:
+              schema:
+                type: array
+                properties:
+                  destination_id:
+                    type: integer
+                  user_id:
+                    type: integer
+                  startingDay:
+                    type: string
+                  endingDay:
+                    type: string
+                required:
+                - destination_id
+                - user_id
+                - startingDay
+                - endingDay
+        '406':
+          description: unsupported accept header
+  "/api/v1/reservations/{id}":
+    delete:
+      summary: Removes a reservation
+      tags:
+      - Remove a reservation
+      security:
+      - bearerAuth: []
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Desination deleted
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: string
+                required:
+                - status
+                - message
+        '404':
+          description: Reservation not found
+        '406':
+          description: unsupported accept header
 servers:
 - url: http://{defaultHost}
   variables:
