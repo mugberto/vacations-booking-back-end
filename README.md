@@ -1,5 +1,9 @@
 # README
 
+# Add Register and Login Component
+ link to the pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/6)
+ 
+
 # Add redux setup and store
 link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/3)]
 
