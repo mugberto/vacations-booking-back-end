@@ -1,6 +1,14 @@
 # README
 
 # Add redux setup and store
+link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/5)]
+
+** In this milestone I did the following 👇 **
+
+- Created redux directories using Ducks pattern
+- Created redux store
+- 
+# Add redux setup and store
 link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/3)]
 
 ** In this milestone I did the following 👇 **
