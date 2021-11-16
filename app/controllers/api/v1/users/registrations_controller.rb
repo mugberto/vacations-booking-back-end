@@ -15,6 +15,6 @@ class Api::V1::Users::RegistrationsController < ApiController
   # private
 
   def user_params
-    params.require(:user).permit(:username, :email, :password, :password_confirmation, admin: false)
+    params.permit(:username, :email, :password, :password_confirmation, admin: false)
   end
 end
