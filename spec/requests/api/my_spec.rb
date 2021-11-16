@@ -38,6 +38,44 @@ RSpec.describe 'Register new user'  do
   end
 end
 
+RSpec.describe 'Login a user'  do
+
+  path '/api/v1/users/sign_in' do
+    
+    post 'Authenticates the user' do 
+      tags 'Login a user'
+      consumes 'application/json', 'application/xml'
+      produces 'application/json'
+      parameter name: :user, in: :body, schema: {
+        type: :object, 
+        properties: {
+          email: { type: :string },
+          password: { type: :string }
+        },
+        required: [ 'email', 'password' ]
+      }
+
+      response '201', 'User signed in' do
+        schema type: :object,
+          properties: {
+            token: {type: :string }
+          },
+          required: [ 'token' ]
+
+        let(:user) { { email: "user@mail.com", password: "password" } }
+        run_test!
+      end
+
+      response '422', 'invalid request' do
+        let(:user) { { email: "user@mail.com" } }
+        run_test!
+      end
+    end
+  end
+end
+
+
+
 #   # path '/users/sign_in' do
     
 #   #   post 'Authenticate a user' do

@@ -60,6 +60,50 @@ paths:
               - email
               - password
               - password_confirmation
+  "/api/v1/users/sign_in":
+    post:
+      summary: Authenticates the user
+      tags:
+      - Login a user
+      parameters: []
+      responses:
+        '201':
+          description: User signed in
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                required:
+                - token
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+              required:
+              - email
+              - password
+          application/xml:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+              required:
+              - email
+              - password
 servers:
 - url: http://{defaultHost}
   variables:
