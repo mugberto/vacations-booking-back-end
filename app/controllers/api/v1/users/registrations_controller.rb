@@ -4,9 +4,9 @@ class Api::V1::Users::RegistrationsController < ApiController
   # POST /resource
   def create
     @user = User.new(user_params)
-    @user.admin = false
+    @user.admin = false if !@user.admin
     if @user.save
-      render json: { message: 'User successfully registered!', token: JsonWebToken.encode(sub: @user.id) }
+      render json: { message: 'User successfully registered!', token: JsonWebToken.encode(sub: @user.id), admin: current_api_v1_user.admin }
     else
       render json: { errors: ['Registration failed!', @user.errors] }
     end
@@ -15,6 +15,6 @@ class Api::V1::Users::RegistrationsController < ApiController
   # private
 
   def user_params
-    params.permit(:username, :email, :password, :password_confirmation, admin: false)
+    params.permit(:username, :email, :password, :password_confirmation, :admin)
   end
 end

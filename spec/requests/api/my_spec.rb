@@ -74,6 +74,101 @@ RSpec.describe 'Login a user'  do
   end
 end
 
+RSpec.describe 'Destinations'  do
+
+  path '/api/v1/destinations' do
+    
+    post 'Creates a new destination' do 
+      tags 'Add destination'
+      security [bearerAuth: [] ]
+      consumes 'application/json', 'application/xml'
+      produces 'application/json'
+      parameter name: :user, in: :body, schema: {
+        type: :object, 
+        properties: {
+          name: { type: :string },
+          location: { type: :string },
+          image_url: { type: :string },
+          price_per_day: { type: :number }
+        },
+        required: [ 'name', 'location', 'image_url', 'price_per_day' ]
+      }
+
+      response '201', 'Desination created' do
+        schema type: :object,
+          properties: {
+            status: { type: :string },
+            message: { type: :string }
+          },
+          required: [ 'status', 'message' ]
+
+        let(:destination) { { name: 'Gracier National Park', location: 'USA', image_url: 'https://res.cloudinary.com/dqdrsilxz/image/upload/v1636573679/sample.jpg',price_per_day: 100 } }
+        run_test!
+      end
+
+      response '422', 'invalid request' do
+        let(:destination) { { name: 'Gracier National Park' } }
+        run_test!
+      end
+    end
+
+    get 'Retrieves a destinations' do
+      tags 'Get destinations'
+      produces 'application/json'
+
+      response '200', 'Get destinations' do
+        schema type: :array,
+          properties: {
+            name: { type: :string },
+            location: { type: :string },
+            image_url: { type: :string },
+            price_per_day: { type: :number }
+          },
+          required: [ 'name', 'location', 'image_url', 'price_per_day' ]
+
+        run_test!
+      end
+
+      response '406', 'unsupported accept header' do
+        let(:'Accept') { 'application/foo' }
+        run_test!
+      end
+    end
+  end
+
+  path '/api/v1/destinations/{id}' do
+    
+    delete 'Removes a destination' do 
+      tags 'Remove a destination'
+      security [bearerAuth: [] ]
+      produces 'application/json'
+      parameter name: :id, in: :path, type: :string
+
+      response '201', 'Desination deleted' do
+        schema type: :object,
+          properties: {
+            status: { type: :string },
+            message: { type: :string }
+          },
+          required: [ 'status', 'message' ]
+
+        let(:id) { Destination.create( name: 'Gracier National Park', location: 'USA', image_url: 'https://res.cloudinary.com/dqdrsilxz/image/upload/v1636573679/sample.jpg',price_per_day: 100).id }
+        run_test!
+      end
+
+      response '404', 'Destination not found' do
+        let(:id) { 'invalid' }
+        run_test!
+      end
+      
+      response '406', 'unsupported accept header' do
+        let(:'Accept') { 'application/foo' }
+        run_test!
+      end
+    end
+  end
+end
+
 
 
 #   # path '/users/sign_in' do

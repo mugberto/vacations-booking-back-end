@@ -104,8 +104,134 @@ paths:
               required:
               - email
               - password
+  "/api/v1/destinations":
+    post:
+      summary: Creates a new destination
+      tags:
+      - Add destination
+      security:
+      - bearerAuth: []
+      parameters: []
+      responses:
+        '201':
+          description: Desination created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: string
+                required:
+                - status
+                - message
+        '422':
+          description: invalid request
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                location:
+                  type: string
+                image_url:
+                  type: string
+                price_per_day:
+                  type: number
+              required:
+              - name
+              - location
+              - image_url
+              - price_per_day
+          application/xml:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                location:
+                  type: string
+                image_url:
+                  type: string
+                price_per_day:
+                  type: number
+              required:
+              - name
+              - location
+              - image_url
+              - price_per_day
+    get:
+      summary: Retrieves a destinations
+      tags:
+      - Get destinations
+      responses:
+        '200':
+          description: Get destinations
+          content:
+            application/json:
+              schema:
+                type: array
+                properties:
+                  name:
+                    type: string
+                  location:
+                    type: string
+                  image_url:
+                    type: string
+                  price_per_day:
+                    type: number
+                required:
+                - name
+                - location
+                - image_url
+                - price_per_day
+        '406':
+          description: unsupported accept header
+  "/api/v1/destinations/{id}":
+    delete:
+      summary: Removes a destination
+      tags:
+      - Remove a destination
+      security:
+      - bearerAuth: []
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Desination deleted
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  message:
+                    type: string
+                required:
+                - status
+                - message
+        '404':
+          description: Destination not found
+        '406':
+          description: unsupported accept header
 servers:
 - url: http://{defaultHost}
   variables:
     defaultHost:
       default: localhost:3000
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
