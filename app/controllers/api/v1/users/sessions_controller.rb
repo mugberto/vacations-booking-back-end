@@ -8,7 +8,7 @@ class Api::V1::Users::SessionsController < ApiController
     if @user&.valid_password? params[:password]
       sign_in(@user)
       render json: { message: 'User loged in successfully!', token: JsonWebToken.encode(sub: @user.id),
-                     current_user_signed?: api_v1_user_signed_in?, current_user: current_api_v1_user.id }
+                     user_id: current_api_v1_user.id, admin: current_api_v1_user.admin }
     else
       render json: { errors: ['Invalid email or password'] }
     end
