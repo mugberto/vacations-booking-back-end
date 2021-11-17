@@ -33,6 +33,9 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
  
 # Added App tests
  [Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/4)
+ 
+# Added DeleteDestinations component
+[Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/10)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
