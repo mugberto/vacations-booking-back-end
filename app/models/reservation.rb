@@ -8,7 +8,7 @@ class Reservation < ApplicationRecord
   validates :endingDay, presence: true
 
   def total_cost
-    @days = (self.endingDay - self.startingDay).to_i
-    @days * self.destination.price_per_day.to_i    
+    @days = (endingDay - startingDay).to_i
+    @days * destination.price_per_day.to_i
   end
 end
