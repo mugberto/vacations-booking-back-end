@@ -32,6 +32,9 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
  link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/2)]
  
 # Added App tests
+ [Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/12)
+ 
+ # Added App styling
  [Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/4)
 
 This README would normally document whatever steps are necessary to get the
