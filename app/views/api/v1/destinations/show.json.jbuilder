@@ -1,1 +1,1 @@
-json.call(@destination, :name, :location, :image_url, :price_per_day)
+json.call(@destination, :id, :name, :location, :image_url, :price_per_day)
