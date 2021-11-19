@@ -5,6 +5,7 @@ class Api::V1::Users::SessionsController < ApiController
 
   def create
     @user = User.find_by(email: params[:email])
+    @user.admin = false unless @user.admin
     if @user&.valid_password? params[:password]
       sign_in(@user)
       render json: { message: 'User loged in successfully!',
