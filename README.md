@@ -40,6 +40,9 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
 # Added DeleteDestinations component
 [Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/10)
 
+# Styled Register component 
+[Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/18)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
