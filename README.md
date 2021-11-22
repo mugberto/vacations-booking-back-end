@@ -56,6 +56,9 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
 # Styled Register component 
 [Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/18)
 
+# Implement Flickity on destinations
+[link](https://github.com/danmainah/vacations-booking-front-end/pull/23) 
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
