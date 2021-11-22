@@ -1,4 +1,9 @@
 # README
+
+# Add reservation reducer and actions
+
+link to pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/22)
+
 # Add test to destinations component
 link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/9)]
 
