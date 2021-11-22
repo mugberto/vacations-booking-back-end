@@ -28,7 +28,7 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
 # Add redux setup and store
 link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/3)]
 
-** In this milestone I did the following 👇 **
+** In this milestone I did the following 👇 **                               
 
 - Created redux directories using Ducks pattern
 - Created redux store
@@ -56,6 +56,9 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
 
 # Styled Register component 
 [Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/18)
+
+# Implement Flickity on destinations
+[link](https://github.com/danmainah/vacations-booking-front-end/pull/23) 
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
