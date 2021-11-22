@@ -1,8 +1,9 @@
 # README
 
+# Add style to delete component
+link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/24)]
 # Add test to destinations component
 link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/9)]
-
 
 # Add my-reservations componet
 
