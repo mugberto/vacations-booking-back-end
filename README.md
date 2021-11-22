@@ -1,5 +1,6 @@
 # README
-
+# Add style to destinations component
+link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/16)]
 # Add test to destinations component
 link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/9)]
 
