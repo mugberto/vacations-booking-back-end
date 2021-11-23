@@ -2,7 +2,10 @@ class Api::V1::ReservationsController < ApiController
   def index
     @reservations = current_api_v1_user.reservations
     if api_v1_user_signed_in?
-      render json: { reservations: @reservations }
+      render json: { reservations: @reservations.to_a.map do |reservation|
+                                     reservation.attributes.merge(cost: reservation.total_cost,
+                                                                  name: reservation.destination.name)
+                                   end }
     else
       renser json: { errors: ['You are not logged in!', @reservations.errors] }
     end
@@ -21,7 +24,7 @@ class Api::V1::ReservationsController < ApiController
   def destroy
     @reservation = Reservation.find(params[:id])
     @reservation.destroy
-    render json: { message: 'Reservation succesfully removed', reservations: @reservations }
+    render json: { status: 'Success!', message: 'Reservation succesfully removed', reservations: @reservations }
   end
 
   private
