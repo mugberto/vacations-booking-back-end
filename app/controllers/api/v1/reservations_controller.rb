@@ -13,7 +13,6 @@ class Api::V1::ReservationsController < ApiController
 
   def create
     @reservation = current_api_v1_user.reservations.build(reservation_params)
-    p reservation_params
     if @reservation.save
       render json: { status: 'Success!', message: 'Reservation successfully created!',
                      total_cost: @reservation.total_cost }
