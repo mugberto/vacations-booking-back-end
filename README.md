@@ -9,7 +9,7 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
 
 link to pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/11)
 
-On this branch, I created a component that lists the current_user's reservations.
+On this branch, I created a component   that lists the current_user's reservations.
 Each item(reservation) on the list displays:
 
 the name of the destination,
