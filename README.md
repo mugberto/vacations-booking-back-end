@@ -60,6 +60,9 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
 # Implement Flickity on destinations
 [link](https://github.com/danmainah/vacations-booking-front-end/pull/23) 
 
+# Fix registrations placeholders
+[LINK](https://github.com/danmainah/vacations-booking-front-end/pull/34)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
