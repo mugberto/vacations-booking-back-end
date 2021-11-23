@@ -2,7 +2,7 @@
 
 # Add my-reservations componet
 
-link to pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/11)
+link to pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/33)
 
 On this branch, I created a component that lists the current_user's reservations.
 Each item(reservation) on the list displays:
