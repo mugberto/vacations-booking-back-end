@@ -60,6 +60,9 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
 # Implement Flickity on destinations
 [link](https://github.com/danmainah/vacations-booking-front-end/pull/23) 
 
+# Add loading action creator
+[LINK](https://github.com/danmainah/vacations-booking-front-end/pull/31)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
