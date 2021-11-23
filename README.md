@@ -1,4 +1,8 @@
 # README
+
+# Link to destination details
+link to the pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/41)
+
 # fix link errors
 
 https://github.com/danmainah/vacations-booking-front-end/pull/36
