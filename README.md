@@ -1,6 +1,12 @@
 # README
+
+# Link to destination details
+link to the pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/41)
+
+
 # add output when array is empty
 Link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/38)]
+
 # fix link errors
 Link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/36)]
 
