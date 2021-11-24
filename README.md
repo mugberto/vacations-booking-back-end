@@ -52,9 +52,9 @@ To run the server, in the project directory, run:
  
 This app should run together with [vacations-booking-front-end](https://github.com/danmainah/vacations-booking-front-end) application. Open the [vacations-booking-front-end](https://github.com/danmainah/vacations-booking-front-end) repo and install it localy to complete the full-stack application.
 
-## Authors
+## 👤👤 Authors
 
-👤👤 **Aleksandar Ivezic**
+👤 **Aleksandar Ivezic**
 
 - GitHub: [@Aleksandar Ivezic](https://github.com/ShinobiWarior)
 - Twitter: [@AIvezic](https://twitter.com/AIvezic)
