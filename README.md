@@ -4,6 +4,9 @@ Link to the pull request [click here(https://github.com/danmainah/vacations-book
 # fix link errors
 Link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/36)]
 
+# Add destination details component
+Link to the pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/35)
+
 # Add style to delete component
 link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/24)]
 # Add test to destinations component
@@ -20,7 +23,6 @@ the name of the destination,
 start_date and end_date of the vacation,
 cost, and
 a button to cancel the reservation.
-
 # Add redux setup and store
 link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/5)]
 
