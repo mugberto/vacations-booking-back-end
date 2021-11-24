@@ -1,111 +1,106 @@
-# README
+![](https://img.shields.io/badge/microverse-blueviolet)
 
-# Link to destination details
-link to the pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/41)
+# Vacations booking back-end
+
+> "Vacations booking back-end" project is a Rails API application which provide the API endpoints for creating/removing different destinations by admin users and creating reservations by other logged users.
+
+![image](https://user-images.githubusercontent.com/63932912/143224920-5cc44446-f6f1-47ee-b737-78e24e5613f7.png)
 
 
-# add output when array is empty
-Link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/38)]
+## Built With
 
-# fix link errors
-Link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/36)]
+- Ruby on Rails
+- Postgres
 
-# Add destination details component
-Link to the pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/35)
 
-# Add style to delete component
-link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/24)]
-# Add test to destinations component
-link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/9)]
+## Getting Started
 
-# Add my-reservations componet
+To get a local copy up and run the app, follow these simple example steps.
 
-link to pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/11)
+### Prerequisites
 
-On this branch, I created a component that lists the current_user's reservations.
-Each item(reservation) on the list displays:
+- Ruby > 2.7.3
+- Rails > 6.1.4.1
+- Postgres > 14.0
 
-the name of the destination,
-start_date and end_date of the vacation,
-cost, and
-a button to cancel the reservation.
-# Add redux setup and store
-link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/5)]
+### Setup
 
-** In this milestone I did the following 👇 **
+Clone the repository with:
 
-- Created redux directories using Ducks pattern
-- Created redux store
-- 
-# Add redux setup and store
-link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/3)]
+```
+git clone git@github.com:mugberto/vacations-booking-back-end.git
+```
+or download [ZIP file](https://github.com/mugberto/vacations-booking-back-end/archive/refs/heads/dev.zip)
 
-** In this milestone I did the following 👇 **                               
+### Install
+To install all dependencies, run:
+```
+bundle install
+```
+Create database and seed the data
+```
+rails db:create
+rails db:migrate
+rails db:seed
+```
+### Usage
+To run the server, in the project directory, run:
 
-- Created redux directories using Ducks pattern
-- Created redux store
-  
-# Setup React App
- link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/1)]
-
-**In this milestone I did the following 👇 **
-
-- Created a react app
-- Added dependencies
-- Added linters
-
-# Add App Component
- link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/2)]
+ ```
+ rails s
+ ```
  
-# Added App tests
- [Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/12)
- 
- # Added App styling
- [Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/4)
- 
-# Added DeleteDestinations component
-[Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/10)
+This app should run together with [vacations-booking-front-end](https://github.com/danmainah/vacations-booking-front-end) application. Open the [vacations-booking-front-end](https://github.com/danmainah/vacations-booking-front-end) repo and install it localy to complete the full-stack application.
 
-# Styled Register component 
-[Link to the PR](https://github.com/danmainah/vacations-booking-front-end/pull/18)
+## Authors
 
-# Implement Flickity on destinations
-[link](https://github.com/danmainah/vacations-booking-front-end/pull/23) 
+👤👤 **Aleksandar Ivezic**
 
+- GitHub: [@Aleksandar Ivezic](https://github.com/ShinobiWarior)
+- Twitter: [@AIvezic](https://twitter.com/AIvezic)
+- LinkedIn: [Aleksandar Ivezic](https://www.linkedin.com/in/aleksandar-ivezic/)
 
-# Fix registrations placeholders
-[LINK](https://github.com/danmainah/vacations-booking-front-end/pull/34)
+👤 **Vo Thi Quynh Yen**
+
+  - GitHub: [@themonster2015](https://github.com/themonster2015)
+  - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jen-vo-89bbb74b/)
 
 
-# Add loading action creator
-[LINK](https://github.com/danmainah/vacations-booking-front-end/pull/31)
+👤 **Hubert MUGABO**
+
+  -  Github: [@mugberto](https://github.com/mugberto)
+  -  Twitter: [@mugberto](https://twitter.com/mugberto)
+  -  Linkedin: [mugberto](https://www.linkedin.com/in/hubert-mugabo-23144b6a/)
+
+👤 **Igor Koloski**
+
+- GitHub: [@igorkol91](https://github.com/igorkol91)
+- Twitter: [@Destro49536502]
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Daniel Maina**
+
+- GitHub: [@danmainah](https://github.com/danmainah)
+
+- Twitter: [@Danmainah](https://twitter.com/dan_mainah)
+
+- LinkedIn: [@Daniel-Maina](www.linkedin.com/in/daniel-maina-315a38191)
 
 
-[link](https://github.com/danmainah/vacations-booking-front-end/pull/28)
+## 🤝 Contributing
 
-#Styled MyReservations
-[link](https://github.com/danmainah/vacations-booking-front-end/pull/43)
+Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](https://github.com/mugberto/vacations-booking-back-end/issues).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Show your support
 
-Things you may want to cover:
-                                     
-* Ruby version
+Give a ⭐️ if you like this project!
 
-* System dependencies
+## Acknowledgments
 
-* Configuration
+- This project was inspired by [Microverse](https://www.microverse.org/?grsf=w9rx3c)
 
-* Database creation
+## 📝 License
 
-* Database initialization
-
-* How to run the test suite             
-                             
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is [MIT](https://github.com/ShinobiWarior/hello-rails-back-end/blob/setup/LICENSE) licensed.
