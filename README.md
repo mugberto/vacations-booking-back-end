@@ -1,4 +1,5 @@
 # README
+# fix link errors
 
 # Add destination details component
 Link to the pull request [click here](https://github.com/danmainah/vacations-booking-front-end/pull/35)
@@ -61,6 +62,19 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
 
 # Implement Flickity on destinations
 [link](https://github.com/danmainah/vacations-booking-front-end/pull/23) 
+
+
+# Fix registrations placeholders
+[LINK](https://github.com/danmainah/vacations-booking-front-end/pull/34)
+
+
+# Add loading action creator
+[LINK](https://github.com/danmainah/vacations-booking-front-end/pull/31)
+
+
+[link](https://github.com/danmainah/vacations-booking-front-end/pull/28)
+
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
