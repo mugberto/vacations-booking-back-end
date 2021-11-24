@@ -73,6 +73,8 @@ link to the pull request [click here(https://github.com/danmainah/vacations-book
 
 [link](https://github.com/danmainah/vacations-booking-front-end/pull/28)
 
+#Styled MyReservations
+[link](https://github.com/danmainah/vacations-booking-front-end/pull/43)
 
 
 This README would normally document whatever steps are necessary to get the
