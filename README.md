@@ -54,11 +54,38 @@ This app should run together with [vacations-booking-front-end](https://github.c
 
 ## Authors
 
-👤 **Aleksandar Ivezic**
+👤👤 **Aleksandar Ivezic**
 
 - GitHub: [@Aleksandar Ivezic](https://github.com/ShinobiWarior)
 - Twitter: [@AIvezic](https://twitter.com/AIvezic)
 - LinkedIn: [Aleksandar Ivezic](https://www.linkedin.com/in/aleksandar-ivezic/)
+
+👤 **Vo Thi Quynh Yen**
+
+  - GitHub: [@themonster2015](https://github.com/themonster2015)
+  - LinkedIn: [LinkedIn](https://www.linkedin.com/in/jen-vo-89bbb74b/)
+
+
+👤 **Hubert MUGABO**
+
+  -  Github: [@mugberto](https://github.com/mugberto)
+  -  Twitter: [@mugberto](https://twitter.com/mugberto)
+  -  Linkedin: [mugberto](https://www.linkedin.com/in/hubert-mugabo-23144b6a/)
+
+👤 **Igor Koloski**
+
+- GitHub: [@igorkol91](https://github.com/igorkol91)
+- Twitter: [@Destro49536502]
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Daniel Maina**
+
+- GitHub: [@danmainah](https://github.com/danmainah)
+
+- Twitter: [@Danmainah](https://twitter.com/dan_mainah)
+
+- LinkedIn: [@Daniel-Maina](www.linkedin.com/in/daniel-maina-315a38191)
+
 
 ## 🤝 Contributing
 
