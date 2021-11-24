@@ -1,7 +1,9 @@
 # README
+# add output when array is empty
+Link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/38)]
 # fix link errors
+Link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/36)]
 
-https://github.com/danmainah/vacations-booking-front-end/pull/36
 # Add style to delete component
 link to the pull request [click here(https://github.com/danmainah/vacations-booking-front-end/pull/24)]
 # Add test to destinations component
