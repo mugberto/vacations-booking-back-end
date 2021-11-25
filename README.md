@@ -10,6 +10,16 @@
 
 [Demo link](https://booking-vacations.herokuapp.com/api-docs/index.html)
 
+## Kanban board
+
+[Link to Kanban board](https://github.com/mugberto/vacations-booking-back-end/projects/1)
+
+Kanban boad setup screenshoot:
+![Kanban-board-screenshot](https://user-images.githubusercontent.com/63932912/143473675-9f4385ab-1f78-45df-99f7-724196a39538.png)
+
+The final member number of this project is: 5!
+
+
 
 ## Built With
 
