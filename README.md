@@ -2,9 +2,13 @@
 
 # Vacations booking back-end
 
-> "Vacations booking back-end" project is a Rails API application which provide the API endpoints for creating/removing different destinations by admin users and creating reservations by other logged users. We were using Swagger to create API documentation. You can check it here - [API documentation](tba-link to deployed documentation page).
+> "Vacations booking back-end" project is a Rails API application which provide the API endpoints for creating/removing different destinations by admin users and creating reservations by other logged users. We were using Swagger to create API documentation. You can check it here - [API documentation](https://booking-vacations.herokuapp.com/api-docs/index.html).
 
 ![image](https://user-images.githubusercontent.com/63932912/143224920-5cc44446-f6f1-47ee-b737-78e24e5613f7.png)
+
+## Live demo link
+
+[Demo link](https://booking-vacations.herokuapp.com/api-docs/index.html)
 
 
 ## Built With
@@ -59,7 +63,7 @@ If you are using the app localy
 ```
 If you are using deployed app
 ```
-{defaultHost} = url_to_be_added
+{defaultHost} = https://booking-vacations.herokuapp.com
 ```
 - Create a new user: `POST` `{defaultHost}/api/v1/users `
 - Authenticates the user: `POST` `{defaultHost}/api/v1/users/sign_in`
