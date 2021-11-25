@@ -27,5 +27,4 @@ class Api::V1::Users::SessionsController < ApiController
       render json: { message: 'You are not logged in!' }
     end
   end
-
 end
