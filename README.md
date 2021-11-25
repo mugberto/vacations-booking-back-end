@@ -2,7 +2,7 @@
 
 # Vacations booking back-end
 
-> "Vacations booking back-end" project is a Rails API application which provide the API endpoints for creating/removing different destinations by admin users and creating reservations by other logged users.
+> "Vacations booking back-end" project is a Rails API application which provide the API endpoints for creating/removing different destinations by admin users and creating reservations by other logged users. We were using Swagger to create API documentation. You can check it here - [API documentation](tba-link to deployed documentation page).
 
 ![image](https://user-images.githubusercontent.com/63932912/143224920-5cc44446-f6f1-47ee-b737-78e24e5613f7.png)
 
@@ -11,6 +11,8 @@
 
 - Ruby on Rails
 - Postgres
+- Rspec
+- Swagger
 
 
 ## Getting Started
@@ -50,6 +52,45 @@ To run the server, in the project directory, run:
  rails s
  ```
  
+### Endpoints
+If you are using the app localy 
+```
+{defaultHost} = http://localhost:3000
+```
+If you are using deployed app
+```
+{defaultHost} = url_to_be_added
+```
+- Create a new user: `POST` `{defaultHost}/api/v1/users `
+- Authenticates the user: `POST` `{defaultHost}/api/v1/users/sign_in`
+- Creates a new destination: `POST` `{defaultHost}/api/v1/destinations`
+- Retreives destinations: `GET` `{defaultHost}/api/v1/destinations`
+- Removes destination: `DELETE` `{defaultHost}/api/v1/destinations/{id}`
+- Creates a new reservation: `POST` `{defaultHost}/api/v1/reservations`
+- Retreives reservations: `GET` `{defaultHost}/api/v1/reservations`
+- Removes a reservation: `DELETE` `{defaultHost}/api/v1/reservations/{id}`
+
+### Tests
+
+To test endpoins please run:
+```
+rails rswag
+```
+
+To test the models please run:
+```
+rspec --exclude-pattern "spec/{requests}/**/*_spec.rb"
+```
+
+#### Testing in browser
+If you prefere do testings in graphic environment, in your browser open 
+```
+{defaultHost}/api-docs/index.html
+```
+and follow the instructions in the API documentation. 
+
+### Front-end app
+
 This app should run together with [vacations-booking-front-end](https://github.com/danmainah/vacations-booking-front-end) application. Open the [vacations-booking-front-end](https://github.com/danmainah/vacations-booking-front-end) repo and install it localy to complete the full-stack application.
 
 ## 👤👤 Authors
